@@ -2,7 +2,16 @@ root = true
 
 [*]
 charset = utf-8
-end_of_line = lf
-indent_size = 2
-indent_style = space
 insert_final_newline = true
+trim_trailing_whitespace = true
+# options for prettier
+quote = single
+end_of_line = lf
+max_line_length = 100
+indent_style = space
+indent_size = 4
+quote_type = single
+
+[package.json]
+indent_style = space
+indent_size = 2
