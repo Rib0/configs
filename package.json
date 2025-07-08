@@ -4,9 +4,15 @@
   "workspaces": [
     "packages/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rib0/configs"
+  },
   "scripts": {
+    "lerna:test": "lerna run test --since",
+    "lerna:build": "lerna run build --since",
     "lerna:version": "lerna version --conventional-commits --yes",
-    "lerna:publish": "lerna publish from-package"
+    "lerna:publish": "lerna publish from-package --yes"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",

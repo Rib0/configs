@@ -1,6 +1,6 @@
 {
   "name": "@rib0/eslint-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "packageManager": "yarn@4.9.0",
   "main": "./dist/index.js",
@@ -26,10 +26,9 @@
   },
   "description": "eslint config",
   "scripts": {
-    "build": "tsup",
-    "check:types": "attw --pack .",
     "test": "node ./dist/index.js && eslint --fix ./src/test/index.js ./src/test/index.ts --config ./src/test/eslint.config.js",
-    "prepack": "yarn build && yarn test"
+    "build": "tsup",
+    "check:types": "attw --pack ."
   },
   "files": [
     "dist"
@@ -41,6 +40,7 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.4",
+    "@rib0/eslint-config": "^1.1.1",
     "eslint": "9.25.1",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"

@@ -12,11 +12,8 @@ import { stylisticConfig } from './configs/stylistic';
 
 // TODO: посмотреть eslint плагины - https://github.com/antfu/eslint-config/blob/main/scripts/typegen.ts
 // TODO: добавить overrides
-// TODO: делать тесты при коммите и при публикации, билдить и публиковать пакет при коммите в git
 
 // https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/disable-enable-pair.html
-// Скорректировать настройку для корректной публикации пакета
-// TODO: подключить утилиты для версионирования
 // Понять что такое лицензия и добавить
 // https://perfectionist.dev/rules/sort-imports.html
 // Вынести в git - editor config

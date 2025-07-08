@@ -183,7 +183,7 @@ export const eslintConfigStandartJs: ConfigWithExtendsArray = {
         'no-script-url': 'error',
         'no-sequences': ['error', { allowInParentheses: false }],
         'no-shadow': [
-            'error',
+            'off',
             { builtinGlobals: true, hoist: 'functions', allow: [], ignoreOnInitialization: false },
         ],
         // 'no-ternary': 'error'
