@@ -1,15 +1,6 @@
-interface CommonConfigParams {
+export type ConfigParams = {
     type: 'browser' | 'node';
     typescript: boolean;
-}
-
-interface BrowserConfigParams extends CommonConfigParams {
-    type: 'browser';
+    stylistic: boolean;
     react: boolean;
-}
-
-interface NodeConfigParams extends CommonConfigParams {
-    type: 'node';
-}
-
-export type ConfigParams = BrowserConfigParams | NodeConfigParams;
+};

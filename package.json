@@ -5,11 +5,13 @@
     "packages/*"
   ],
   "scripts": {
-    "prepare": "husky"
+    "lerna:version": "lerna version --conventional-commits --yes",
+    "lerna:publish": "lerna publish from-package"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "lerna": "^8.2.3"
   }
 }

@@ -1,0 +1,15 @@
+{
+    "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+    "version": "independent",
+    "npmClient": "yarn",
+    "command": {
+        "version": {
+            "allowBranch": "master",
+            "message": "chore(release): publish"
+        },
+        "publish": {
+            "directory": "{workspaceRoot}/{projectRoot}/dist",
+            "assets": ["README.md", "package.json"]
+        }
+    }
+}

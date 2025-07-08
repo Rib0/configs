@@ -1,17 +1,11 @@
 import * as eslint from 'eslint';
 
-interface CommonConfigParams {
+type ConfigParams = {
     type: 'browser' | 'node';
     typescript: boolean;
-}
-interface BrowserConfigParams extends CommonConfigParams {
-    type: 'browser';
+    stylistic: boolean;
     react: boolean;
-}
-interface NodeConfigParams extends CommonConfigParams {
-    type: 'node';
-}
-type ConfigParams = BrowserConfigParams | NodeConfigParams;
+};
 
 declare const defineConfig: (configParams?: ConfigParams) => eslint.Linter.Config<eslint.Linter.RulesRecord>[];
 

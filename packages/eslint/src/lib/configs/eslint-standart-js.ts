@@ -2,7 +2,7 @@ import js from '@eslint/js';
 import { ConfigWithExtendsArray } from '@/types/eslint';
 
 export const eslintConfigStandartJs: ConfigWithExtendsArray = {
-    name: 'rib0/eslint-config/standart-js', // name for debugging
+    name: 'rib0/eslint-config/standart-js',
     plugins: { js },
     extends: ['js/recommended'],
     rules: {

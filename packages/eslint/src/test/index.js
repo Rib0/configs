@@ -1,11 +1,11 @@
 const q = {
-    set a(value) {
-        this.val = value;
-    },
-};
+  set a(value) {
+    this.val = value
+  },
+}
 
-console.log(2);
+console.log(2)
 
 export default function foo() {}
 
-setTimeout(() => {});
+setTimeout(() => {})

@@ -347,7 +347,6 @@ var import_config = __toESM(require_config_api(), 1);
 import js from "@eslint/js";
 var eslintConfigStandartJs = {
   name: "rib0/eslint-config/standart-js",
-  // name for debugging
   plugins: { js },
   extends: ["js/recommended"],
   rules: {
@@ -612,11 +611,21 @@ var languageOptionsTS = {
   }
 };
 
+// src/lib/configs/stylistic.ts
+import stylistic from "@stylistic/eslint-plugin";
+var stylisticConfig = {
+  name: "rib0/stylistic-config",
+  plugins: { "@stylistic": stylistic },
+  extends: [stylistic.configs.recommended],
+  rules: {
+    // '@stylistic/semi': 'error',
+  }
+};
+
 // src/lib/index.ts
 var defineConfig = (configParams = {}) => {
-  const { type = "browser", typescript } = configParams;
+  const { type = "browser", typescript, stylistic: stylistic2, react } = configParams;
   const isBrowser = type === "browser";
-  const isNode = type === "node";
   const commonConfigs = [
     {
       languageOptions,
@@ -638,7 +647,11 @@ var defineConfig = (configParams = {}) => {
     }
   ];
   const typescriptConfigs = [languageOptionsTS];
-  const configs = [...commonConfigs, typescript && typescriptConfigs].filter(Boolean);
+  const configs = [
+    ...commonConfigs,
+    typescript && typescriptConfigs,
+    stylistic2 && stylisticConfig
+  ].filter(Boolean);
   return (0, import_config.defineConfig)(configs);
 };
 export {
