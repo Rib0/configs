@@ -1,11 +1,6 @@
-const q = {
-  set a(value) {
-    this.val = value
-  },
-}
+const a = 1
+const b = 2
 
-console.log(2)
+const sum = (a, b) => a + b
 
-export default function foo() {}
-
-setTimeout(() => {})
+sum(a, b)

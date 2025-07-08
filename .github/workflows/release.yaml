@@ -8,15 +8,24 @@ on:
 jobs:
   test-build-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - run: yarn ci
-      - run: yarn build
-      - run: yarn test
-      - run: yarn publish
-        env:
-            NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - name: Configure Git User
+        run: |
+          git config --global user.email "nikitsidenk@mail.ru"
+          git config --global user.name "Nikita"
+      - run: corepack enable
+      - run: yarn install --immutable
+      - run: yarn lerna:build
+      - run: yarn lerna:test
+      - run: yarn lerna:version
+      - run: yarn lerna:publish
