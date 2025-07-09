@@ -20,6 +20,7 @@ import { stylisticConfig } from './configs/stylistic';
 // TODO: сделать readme файл и научиться с ним работать
 // TODO: https://docs.github.com/ru/actions/how-tos/monitoring-and-troubleshooting-workflows/monitoring-workflows/adding-a-workflow-status-badge
 // Включить типы для js файла eslint.config.js
+// TODO: почему в релиз пакета не попадает папка dist
 
 export const defineConfig = (configParams: ConfigParams = {} as ConfigParams) => {
     const { type = 'browser', typescript, stylistic, react } = configParams;

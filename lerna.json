@@ -9,7 +9,7 @@
         },
         "publish": {
             "directory": "{workspaceRoot}/{projectRoot}/dist",
-            "assets": ["README.md", "package.json"]
+            "assets": ["README.md", "package.json", "{workspaceRoot}/{projectRoot}/dist"]
         }
     }
 }
