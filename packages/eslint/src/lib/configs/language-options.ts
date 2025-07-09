@@ -8,7 +8,7 @@ export const languageOptions: Linter.LanguageOptions = {
     globals: {
         ...globals.builtin,
         ...globals.browser,
-        ...globals.node, // TODO: вынести только для ноды c помощью переменных параметровв
+        ...globals.node, // TODO: вынести только для ноды c помощью переменных параметроввe
     },
     parserOptions: {
         ecmaFeatures: {
