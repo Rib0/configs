@@ -1,6 +1,6 @@
 {
   "name": "@rib0/eslint-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "packageManager": "yarn@4.9.0",
   "main": "./dist/index.js",

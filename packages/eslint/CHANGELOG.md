@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.1 (2025-07-09)
+
+
+### Bug Fixes
+
+* fix ([b447dcc](https://github.com/Rib0/configs/commit/b447dcc424f6865f0ca6ddad86bdd9fa1354ce1a))
+
+
+
+
+
 # 1.2.0 (2025-07-09)
 
 
