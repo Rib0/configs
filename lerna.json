@@ -6,10 +6,6 @@
         "version": {
             "allowBranch": "master",
             "message": "chore(release): publish"
-        },
-        "publish": {
-            "directory": "{workspaceRoot}/{projectRoot}/dist",
-            "assets": ["package.json"]
         }
     }
 }
