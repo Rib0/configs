@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.3.0 (2025-07-09)
+
+
+### Features
+
+* test publish ([60a54cb](https://github.com/Rib0/configs/commit/60a54cbbce449a2916363fd24cc273ec0ae87d9e))
+
+
+
+
+
 # 1.2.0 (2025-07-09)
 
 
