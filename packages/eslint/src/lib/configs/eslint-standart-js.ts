@@ -81,7 +81,7 @@ export const eslintConfigStandartJs: ConfigWithExtendsArray = {
         'no-div-regex': 'error',
         'no-else-return': 'error',
         'no-empty-function': 'error',
-        // 'no-eq-null': 'error', NOTE: disabled due to eqeqeq rule
+        // 'no-eq-null': 'error', NOTE: disabled due to eqeqeq rulee
         'no-eval': 'error',
         'no-extend-native': 'error',
         'no-extra-bind': 'error',
