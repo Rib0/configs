@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.2.0 (2025-07-09)
+
+
+### Features
+
+* **eslint:** test publish ([5cb6323](https://github.com/Rib0/configs/commit/5cb632396c793ed3b53439258a893e4956a9d63e))
+
+
+
+
+
 # 1.1.0 (2025-07-08)
 
 
