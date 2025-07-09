@@ -1261,26 +1261,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rib0/eslint-config@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@rib0/eslint-config@npm:1.2.0"
-  dependencies:
-    "@stylistic/eslint-plugin": "npm:^5.1.0"
-    "@typescript-eslint/parser": "npm:8.32.0"
-    globals: "npm:^16.0.0"
-  peerDependencies:
-    "@eslint/js": ">=9.25.0"
-    typescript: ">=5.8.3"
-  checksum: 10c0/479adc137f208c4d767e76e8648d57c9a7d2afefd9a9109b12b8fe134475c3ff737ea6e4beaf3f7c4def78363a72c81736af8bcb9826dde2af232cb54fafbc5e
-  languageName: node
-  linkType: hard
-
 "@rib0/eslint-config@workspace:packages/eslint":
   version: 0.0.0-use.local
   resolution: "@rib0/eslint-config@workspace:packages/eslint"
   dependencies:
     "@arethetypeswrong/cli": "npm:^0.17.4"
-    "@rib0/eslint-config": "npm:^1.2.0"
     "@stylistic/eslint-plugin": "npm:^5.1.0"
     "@typescript-eslint/parser": "npm:8.32.0"
     eslint: "npm:9.25.1"
